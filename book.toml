@@ -1,0 +1,19 @@
+[book]
+authors = ["RareTutor"]
+language = "en"
+src = "src"
+title = "Options Mastery — From Zero to Black-Scholes"
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+git-repository-url = ""
+additional-css = ["custom.css"]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html.fold]
+enable = true
+level = 0
