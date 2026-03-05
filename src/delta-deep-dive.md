@@ -16,21 +16,21 @@ If you are comfortable with calculus, this should feel familiar.
 
 Option value is a function of stock price:
 
-\\[
+\[
 V = f(S)
-\\]
+\]
 
 Delta is the first derivative of that function with respect to stock price:
 
-\\[
-\\Delta = \\frac{\\partial V}{\\partial S}
-\\]
+\[
+\Delta = \frac{\partial V}{\partial S}
+\]
 
 So for a small stock move:
 
-\\[
-dV \\approx \\Delta \\, dS
-\\]
+\[
+dV \approx \Delta \, dS
+\]
 
 This is why traders care about delta: it is the best local linear approximation of option price movement around "right now."
 
@@ -72,15 +72,15 @@ Delta behaves the same way. In the middle of the S-curve — right at the money 
 
 On the option-price graph itself (option price on Y-axis, stock price on X-axis), delta is the slope of the tangent line at your current stock price. If delta is 0.60, a small $1 stock move maps to roughly a $0.60 option move near that point:
 
-\\[
-dV \\approx 0.60 \\, dS
-\\]
+\[
+dV \approx 0.60 \, dS
+\]
 
 Because that slope changes as you move along the curve, delta is not constant. That "change in slope" is gamma:
 
-\\[
-\\Gamma = \\frac{\\partial^2 V}{\\partial S^2}
-\\]
+\[
+\Gamma = \frac{\partial^2 V}{\partial S^2}
+\]
 
 Module 6 explores gamma mechanics in depth.[^3][^4]
 
@@ -297,7 +297,7 @@ Module 4 introduced the heuristic: "delta approximates the probability of finish
 
 For call options in the Black-Scholes framework, the key insight is: **delta overstates the probability of finishing in the money.** For calm stocks with short-dated options, the overstatement is tiny. For volatile stocks with long-dated options, the gap can be enormous.[^24][^25]
 
-Model shorthand used below: for calls, \\(\Delta = N(d_1)\\). For puts, \\(\Delta = N(d_1)-1\\).
+Model shorthand used below: for calls, \(\Delta = N(d_1)\). For puts, \(\Delta = N(d_1)-1\).
 
 Why? Delta is a hedge-size number, not a probability meter. When deciding how many shares to hedge, the market cares about two things: *whether* the option finishes ITM and *by how much*. A lottery ticket analogy helps: if you are insuring a lottery, you need to know not just the odds of winning (probability) but also the jackpot size (magnitude). Delta bundles both together. Pure probability does not.[^25]
 
