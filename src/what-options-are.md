@@ -131,10 +131,10 @@ The flowchart below shows the decision path:
 flowchart TD
     A[Option Contract Created] --> B[Buyer pays premium]
     A --> C[Seller receives premium]
-    B --> D{At expiration:\nIs the option\nworth exercising?}
+    B --> D{At expiration:<br>Is the option<br>worth exercising?}
     D -- Yes --> E[Buyer exercises the right]
-    D -- No --> F[Buyer lets it expire\nLoss = premium paid]
-    E --> G[Seller MUST fulfill\nthe obligation]
+    D -- No --> F[Buyer lets it expire<br>Loss = premium paid]
+    E --> G[Seller MUST fulfill<br>the obligation]
 ```
 
 Think of the seller as a landlord who signs a fixed-price lease. If market rents skyrocket, the landlord is locked into the old rate — that is the obligation side. The landlord accepted that risk in exchange for guaranteed rental income upfront (the premium). Sellers accept the risk of obligation in exchange for premium income, and many are sophisticated hedgers managing large portfolios — not gamblers hoping to get lucky. We will cover seller strategies in Module 6.

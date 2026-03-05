@@ -214,10 +214,10 @@ At expiration, the option's time value is gone. You are left with intrinsic valu
 ```mermaid
 flowchart TD
     A["Expiration Approaches"] --> B{"Close position early?"}
-    B -->|"Yes"| C["Sell to Close\n(Capture remaining\nintrinsic + time value)"]
-    B -->|"No — hold to expiry"| D{"Option ITM\nby ≥ $0.01?"}
-    D -->|"Yes"| E["Auto-Exercised by OCC\nCall → buy 100 shares at strike\nPut → sell 100 shares at strike"]
-    D -->|"No"| F["Expires Worthless\nRemoved from account\nPremium is lost"]
+    B -->|"Yes"| C["Sell to Close<br>(Capture remaining<br>intrinsic + time value)"]
+    B -->|"No — hold to expiry"| D{"Option ITM<br>by ≥ $0.01?"}
+    D -->|"Yes"| E["Auto-Exercised by OCC<br>Call → buy 100 shares at strike<br>Put → sell 100 shares at strike"]
+    D -->|"No"| F["Expires Worthless<br>Removed from account<br>Premium is lost"]
 ```
 
 ### The OCC Auto-Exercise Rule
