@@ -10,6 +10,7 @@ preferred-dark-theme = "navy"
 git-repository-url = ""
 additional-css = ["custom.css"]
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
+mathjax-support = true
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
