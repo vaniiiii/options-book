@@ -22,32 +22,30 @@ If any of those feel shaky, revisit the relevant module first. Everything below 
 
 ## What "Sensitivity" Means
 
-Module 3 told you higher volatility makes options more expensive. That is a *directional* statement — it says which way the price moves. But not *by how much*.
+Module 3 told you which direction option prices tend to move when volatility, time, or rates change. This module adds the missing part: **magnitude**.
 
-Sensitivity adds the missing number.
+Each Greek answers one question: if one input changes by one unit, how much should the option price change, approximately, with other inputs held fixed?[^1][^3]
 
-Options work the same way. Each **Greek** quantifies one relationship: how many dollars does my option gain or lose when one specific input changes by one unit, with everything else held constant?[^1][^3]
+We isolate one force at a time for learning. In live markets, everything moves together. Greeks are local estimates for small moves, so treat them as guideposts, not guarantees.[^4]
 
-We measure one Greek at a time by imagining everything else frozen — because in practice everything moves at once, and the only way to understand each force is to isolate it. One important caveat: Greeks are theoretical estimates for small changes. They are guideposts, not GPS coordinates — a distinction we will return to at the end.[^4]
+Make it concrete with one ACME call held overnight:
 
-Make it concrete. Suppose you hold one ACME call overnight.
+- If the stock is unchanged but the option opens lower, that clock-loss comes from **theta**.
+- If the stock rises $1 and your option rises about $0.52, that response is **delta**.
+- If you sold calls and buy shares to mute small stock moves, that share amount is your **hedge size** (computed from delta).
 
-- If the stock is unchanged but the option opens lower, that slow clock-loss is **daily decay**.
-- If the stock moves and your option follows, the "how much it follows" is sensitivity.
-- If you sold calls and want to mute small stock moves, you buy or sell shares. That share amount is your **hedge size**.
+Where do you see the raw numbers? On an **options chain** — the table of option contracts by strike and expiration. Broker platforms show Greek columns on that table (delta, gamma, theta, vega, and sometimes rho), usually computed from a **pricing model** (a calculator that maps stock price, strike, time, volatility, and rates to theoretical option value and Greeks).
 
-Where do these numbers come from on an options chain? Brokers compute them with a **pricing model** — a calculator that takes stock price, strike, time, volatility, and rates, then outputs a theoretical option price and Greeks.
-
-You do not need model derivations yet. In this module, formulas are shorthand labels for ideas you can already feel from Modules 1-3.
+You do not need model derivations yet. In this module, formulas are compact labels for ideas you can already feel from Modules 1-3.
 
 The same story written as bookkeeping:
 
 \\[
-\\Delta \\text{Option Price} \\approx
-\\Delta \\cdot \\Delta S
-+ \\Theta \\cdot \\Delta t
-+ \\text{Vega} \\cdot \\Delta \\text{IV}
-+ \\text{Rho} \\cdot \\Delta r
+\Delta \text{Option Price} \approx
+\Delta \cdot \Delta S
++ \Theta \cdot \Delta t
++ \text{Vega} \cdot \Delta \text{IV}
++ \text{Rho} \cdot \Delta r
 \\]
 
 Translation: one line from stock move, one from time passing, one from volatility change, one from rates.
@@ -397,5 +395,3 @@ In **Module 5**, we zoom into delta with the first real math layer. You will see
 [^16]: HedgePoint Global, "Options Greeks: From Delta to Theta" — Portfolio Greeks and P&L decomposition framework.
 [^17]: Quant-Next, "Option Greeks and P&L Decomposition" — Gamma-theta tradeoff; professional risk management.
 [^18]: ChartMini, "Options Greeks Guide" — How Greeks change with stock price, time, and volatility.
-
-
