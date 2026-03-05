@@ -12,8 +12,8 @@ You know what a stock is, what buying and selling means, and that prices change.
 |---|--------|--------|
 | 1 | [What Options Are (Calls, Puts & Payoff Intuition)](./what-options-are.md) | Available |
 | 2 | [Moneyness, Expiry, Intrinsic vs Time Value](./moneyness-expiry-time-value.md) | Available |
-| 3 | Why Options Have Value (Vol, Time, Rates Intuition) | Coming soon |
-| 4 | Greeks Overview (Mental Model) | Coming soon |
+| 3 | [Why Options Have Value (Vol, Time, Rates Intuition)](./why-options-have-value.md) | Available |
+| 4 | [Greeks Overview (Mental Model)](./greeks-overview.md) | Available |
 | 5 | Delta Deep Dive | Coming soon |
 | 6 | Gamma Deep Dive | Coming soon |
 | 7 | Theta Deep Dive | Coming soon |
