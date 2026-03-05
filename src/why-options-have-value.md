@@ -208,13 +208,13 @@ Up to now, we kept everything verbal. Module 4 will put numbers on each force.
 
 For small changes, traders often use this approximation:
 
-\[
+\\[
 \Delta \text{Option Price} \approx
 (\text{stock sensitivity} \times \Delta \text{Stock})
 + (\text{time sensitivity} \times \Delta \text{Time})
 + (\text{volatility sensitivity} \times \Delta \text{IV})
 + (\text{rate sensitivity} \times \Delta \text{Rates})
-\]
+\\]
 
 Read it as a bookkeeping line, not a scary formula: one part from stock movement, one from time passing, one from volatility shifting, one from rates moving.
 
