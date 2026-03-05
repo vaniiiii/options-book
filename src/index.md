@@ -15,7 +15,7 @@ You know what a stock is, what buying and selling means, and that prices change.
 | 3 | [Why Options Have Value (Vol, Time, Rates Intuition)](./why-options-have-value.md) | Available |
 | 4 | [Greeks Overview (Mental Model)](./greeks-overview.md) | Available |
 | 5 | [Delta Deep Dive](./delta-deep-dive.md) | Available |
-| 6 | Gamma Deep Dive | Coming soon |
+| 6 | [Gamma Deep Dive](./gamma-deep-dive.md) | Available |
 | 7 | Theta Deep Dive | Coming soon |
 | 8 | Vega Deep Dive | Coming soon |
 | 9 | Rho (Light but Practical) | Coming soon |

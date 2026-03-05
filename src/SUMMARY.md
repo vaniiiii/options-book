@@ -11,3 +11,4 @@
 - [Module 3: Why Options Have Value](./why-options-have-value.md)
 - [Module 4: Greeks Overview](./greeks-overview.md)
 - [Module 5: Delta Deep Dive](./delta-deep-dive.md)
+- [Module 6: Gamma Deep Dive](./gamma-deep-dive.md)
