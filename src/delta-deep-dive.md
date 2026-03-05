@@ -186,7 +186,7 @@ At any given strike and expiration, the relationship is:
 
 If the call has delta +0.70, the put at the same strike has delta −0.30. The absolute values always sum to 1.00.
 
-| Strike | Call Delta | Put Delta | |Call Δ| + |Put Δ| |
+| Strike | Call Delta | Put Delta | \|Call Δ\| + \|Put Δ\| |
 |--------|-----------|-----------|---------------------|
 | $80    | +0.996    | −0.004    | 1.000               |
 | $90    | +0.906    | −0.094    | 1.000               |
