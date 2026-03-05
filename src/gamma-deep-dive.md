@@ -30,13 +30,13 @@ An option moves differently. A $1 stock move might earn you $0.54. The next $1 e
 In calculus language, Module 5 gave us \(\Delta = \partial V / \partial S\). Gamma is the next derivative:
 
 \\[
-\Gamma = \frac{\partial \Delta}{\partial S} = \frac{\partial^2 V}{\partial S^2}
+\\Gamma = \\frac{\\partial \\Delta}{\\partial S} = \\frac{\\partial^2 V}{\\partial S^2}
 \\]
 
 So for a small stock move \(dS\), the delta shift is approximately:
 
 \\[
-d\Delta \approx \Gamma \, dS
+d\\Delta \\approx \\Gamma \\, dS
 \\]
 
 That one line explains hedging drift: even if you start delta-neutral, delta moves as soon as stock price moves.

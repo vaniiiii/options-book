@@ -43,11 +43,11 @@ You do not need model derivations yet. In this module, formulas are shorthand la
 The same story written as bookkeeping:
 
 \\[
-\Delta \text{Option Price} \approx
-\Delta \cdot \Delta S
-+ \Theta \cdot \Delta t
-+ \text{Vega} \cdot \Delta \text{IV}
-+ \text{Rho} \cdot \Delta r
+\\Delta \\text{Option Price} \\approx
+\\Delta \\cdot \\Delta S
++ \\Theta \\cdot \\Delta t
++ \\text{Vega} \\cdot \\Delta \\text{IV}
++ \\text{Rho} \\cdot \\Delta r
 \\]
 
 Translation: one line from stock move, one from time passing, one from volatility change, one from rates.
